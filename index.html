@@ -4,20 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="article.js"></script>
+    <link rel="icon" sizes="16x16" href="./data/apple-icon-180x180.png">
     <title>Article Ranker</title>
   </head>
   <body>
     <h1>Article Ranker</h1>
     <h3> Here is an article please read and click next </h3>
-    <script>
-        fetch('data/article-1.json')
-          .then(function (response){
-              return response.json();
-          })
-          .catch(function (err){
-              console.log(err);
-          });
-    </script>
-    <button type="button">Next Article</button>
+    <div class="container" id="myData"></div>
+    <input id="click" type="button" value="Next Article" onclick="GET();"/>
   </body>
 </html>
