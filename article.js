@@ -1,8 +1,27 @@
-//let request = new XMLHttpRequest();
+let i = 1;
 
 function selector(){
-    get1()
+    switch(i){
+        case 1:
+            get1(i);
+            break;
+        case 2:
+            get2(i);
+            break;
+        case 3:
+            get3(i);
+            break;
+        case 4:
+            get4(i);
+            break;
+        case 5:
+            get5(i);
+            break;
+        default:
+            get1();
+    }
 }
+
 function get1() {
   fetch("./data/article-1.json")
     .then(function (response){
@@ -18,6 +37,7 @@ function get1() {
 }
 
 function get2() {
+
     fetch("./data/article-2.json")
         .then(function (response){
             return response.json();
@@ -31,6 +51,7 @@ function get2() {
         });
 }
 function get3() {
+
     fetch("./data/article-3.json")
         .then(function (response){
             return response.json();
@@ -45,6 +66,7 @@ function get3() {
 }
 
 function get4() {
+
     fetch("./data/article-4.json")
         .then(function (response){
             return response.json();
@@ -59,6 +81,7 @@ function get4() {
 }
 
 function get5() {
+
     fetch("./data/article-4.json")
         .then(function (response){
             return response.json();
@@ -71,6 +94,12 @@ function get5() {
             console.log(err);
         });
 }
+
+function final() {
+
+}
+
+
 
 function display(data){
     let identifier = 0;
