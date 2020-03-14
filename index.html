@@ -7,12 +7,14 @@
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script type="text/javascript" src="article.js"></script>
     <link rel="icon" sizes="16x16" href="./data/apple-icon-180x180.png">
-    <title>Article Ranker</title>
+    <script type="text/javascript" src="article.js"></script>
+    <title id="top">Article Ranker</title>
   </head>
   <body>
-    <h1>Article Ranker</h1>
-    <h3> Here is an article please read and click next </h3>
-    <div class="container" id="myData"></div>
-    <input id="click" type="button" value="Next Article" onclick="GET();"/>
+    <h1 id="header" >Article Ranker</h1>
+    <div class="container" id="myData">
+
+    </div>
+    <input id="click" type="button" value="Next Article" onclick="clearJSON(); get();"/>
   </body>
 </html>
